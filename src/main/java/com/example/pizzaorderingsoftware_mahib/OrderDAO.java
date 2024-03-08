@@ -2,15 +2,15 @@ package com.example.pizzaorderingsoftware_mahib;
 
 public class OrderDAO {
     private int orderId;
-    private String customerNumber;
+    private String customerName;
     private int mobileNumber;
     private String size;
     private int numberofToppings;
     private double totalBill;
 
-   public OrderDAO(int orderId, String customerNumber, int mobileNumber, String size, int numberofToppings, double totalBill) {
+   public OrderDAO(int orderId, String customerName, int mobileNumber, String size, int numberofToppings, double totalBill) {
        this.orderId=orderId;
-       this.customerNumber=customerNumber;
+       this.customerName=customerName;
        this.mobileNumber=mobileNumber;
        this.size=size;
        this.numberofToppings=numberofToppings;
@@ -25,12 +25,12 @@ public class OrderDAO {
         this.orderId = orderId;
     }
 
-    public String getCustomerNumber() {
-        return customerNumber;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setCustomerNumber(String customerNumber) {
-        this.customerNumber = customerNumber;
+    public void setCustomerNumber(String customerName) {
+        this.customerName = customerName;
     }
 
     public int getMobileNumber() {
